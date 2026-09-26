@@ -1,5 +1,18 @@
+# =========================
+# FRONTEND - React / Vite
+# =========================
+
+node_modules/
+dist/
+dist-ssr/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +20,59 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Vite
+.vite/
+vite.config.*.timestamp-*
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+
+# =========================
+# BACKEND - Django / Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django database
+db.sqlite3
+db.sqlite3-journal
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django files
+media/
+staticfiles/
+
+# Python testing/cache
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+
+# =========================
+# IDE / EDITOR
+# =========================
+
+.vscode/
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.swp
+*.swo
+
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
